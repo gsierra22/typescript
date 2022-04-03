@@ -1,8 +1,9 @@
 import { question } from "readline-sync";// imports question method
 
-function main()
+function main(): void
 {
-    console.log(question)
+    const firstString: string= question('Enter first numer:\n')
+    console.log(firstString)
 }
 
 main();
