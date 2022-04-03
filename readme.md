@@ -6,3 +6,5 @@ tsc -v checks version
 npm init -y --creates package.json
 create index.ts file
 tsc /index.ts -create a js file of your ts file
+npm install --save readline-sync
+npm install --save @types/readline-sync
