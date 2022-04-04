@@ -21,9 +21,7 @@ function main() {
     var firstString = (0, readline_sync_1.question)('Enter first numer:\n');
     var operator = (0, readline_sync_1.question)('Enter operator: \n');
     var secondString = (0, readline_sync_1.question)('Enter second numer:\n');
-    var op = isOperator(operator);
-    console.log(op);
-    var firstNum = isNumber(firstString);
-    var secondNum = isNumber(secondString);
+    var validInput = isNumber(firstString) && isOperator(operator) && isNumber(secondString);
+    console.log(validInput);
 }
 main();

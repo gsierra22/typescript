@@ -22,16 +22,13 @@ function isOperator(operator: string):boolean
     }
 }
 
-    const firstString: string= question('Enter first numer:\n')
+    const firstString: string= question('Enter first number:\n')
     const operator: string= question('Enter operator: \n')
-    const secondString: string= question('Enter second numer:\n')
-    const op = isOperator(operator)
+    const secondString: string= question('Enter second number:\n')
 
-    console.log(op)
+    const validInput :boolean = isNumber(firstString) && isOperator(operator) && isNumber(secondString)
 
-    const firstNum= isNumber(firstString)
-    const secondNum= isNumber(secondString)
-
+    console.log(validInput)
 }
 
 main();
