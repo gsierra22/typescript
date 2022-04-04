@@ -1,3 +1,11 @@
+## Typescript Calculator
+
+Hello! I coded along with a typescript video to create a little calculator. I recently finished up a typescript course with FrontEnd master's and wanted to create something tangible using typescript
+
+## What I learned
+
+I now better understand what typescript is and how to use types. I also understand what it means to compile typescript into a javascript file. With basic Javascript, I also better understand switch statements now.
+
 ## Setting up notes
 
 npm install -g typescript
