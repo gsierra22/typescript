@@ -18,10 +18,30 @@ function main() {
                 return false;
         }
     }
-    var firstString = (0, readline_sync_1.question)('Enter first numer:\n');
+    var firstString = (0, readline_sync_1.question)('Enter first number:\n');
     var operator = (0, readline_sync_1.question)('Enter operator: \n');
-    var secondString = (0, readline_sync_1.question)('Enter second numer:\n');
+    var secondString = (0, readline_sync_1.question)('Enter second number\n');
     var validInput = isNumber(firstString) && isOperator(operator) && isNumber(secondString);
-    console.log(validInput);
+    function calculate(firstNum, operator, secondtNum) {
+        switch (operator) {
+            case '+':
+                return firstNum + secondtNum;
+            case '-':
+                return firstNum - secondtNum;
+            case '*':
+                return firstNum * secondtNum;
+            case '/':
+                return firstNum / secondtNum;
+        }
+    }
+    if (validInput) {
+        var firstNum = parseInt(firstString);
+        var secondtNum = parseInt(secondString);
+        var result = calculate(firstNum, operator, secondtNum);
+        console.log(result);
+    }
+    else {
+        console.log('\ninvalid input\n');
+    }
 }
 main();
